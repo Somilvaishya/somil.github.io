@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d32ca7ced5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/logos.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Fronten End Devloper</p>
+          <h1>
+            Hi, I'm <span>Somil</span> Vaishya <br />
+            From Lucknow
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!---------------about------------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/sv3.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Somil vaishya is a web devloper, who develops full responsive
+              website by using HTML, CSS, JAVASCRIPT, and BOOTSTRAP. He has
+              worked in some own project includind "All In One"-(this is a
+              service provider website) and "PG LIFE"-(this website is helpfull
+              for search PG-Rooms).
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience/Project
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Web app Development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2021</span><br />PG LIFE (own project)</li>
+                <li><span>2022</span><br />ALL IN ONE (own project)</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023</span><br />B.Tech from Aktu</li>
+                <li>
+                  <span>2022</span><br />HTML,CSS,JAVASCRIPT,PHP course from
+                  Udemy
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------services----------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              U want a website for business growth contact me. my skills are
+              create a fullresponsive website.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>In this time service is not available</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------Portfolio------------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/work-1.png" />
+            <div class="layer">
+              <h3>Traveling Website</h3>
+              <p>
+                this website help to decide your aim place. where you want to
+                visit.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-2.png" />
+            <div class="layer">
+              <h3>Service Website</h3>
+              <p>
+                this website usefull for all people, whose dont have more time.
+                and book your service at your home.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-3.png" />
+            <div class="layer">
+              <h3>Hotel Room</h3>
+              <p>its help to book your room in any city.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!--------------contact-------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> somilvaishya78@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>8542866684</p>
+            <div class="social-icons">
+              <a href="http://facebook.com/"><i class="fab fa-facebook"></i></a>
+              <a href="http://in.linkedin.com/in/somil-vaishya"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <a href="img/My cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right"></div>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright © Somil.</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName('tab-links');
+      var tabcontents = document.getElementsByClassName('tab-contents');
+
+      function opentab(tabname) {
+        for (tablinks of tablinks) {
+          tablinks.classlist.remove('active-link');
+        }
+        for (tabcontents of tabcontents) {
+          tabcontents.classlist.remove('active-tab');
+        }
+        event.currentTarget.classlist.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById('sidemenu');
+
+      function openmenu() {
+        sidemenu.style.right = '0';
+      }
+      function closemenu() {
+        sidemenu.style.right = '-200px';
+      }
+    </script>
+    <script>
+        const scriptURL =
+          'https://script.google.com/macros/s/AKfycbw4Im-dfwG6cFc2YHD9M0oh07ffrVY4K3owKzsXcZXWa5tO4ufxnvngKGnMucUZquIk0g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response) => {
+              msg.innerHTML = "Message sent successfully"
+              setTimeout(function(){
+                msg.innerHTML =
+            },5000)
+            form.reset
+          })
+            .catch(error => console.error('Error!', error.message));
+        })
+    </script>
+  </body>
+</html>
